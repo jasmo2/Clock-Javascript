@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="clock.js"></script>
+	<style>
+	.centered{
+		text-align: center;
+	}
+	</style>
+</head>
+<body >
+	<div>
+		<span id="HourD">HH</span><span > : </span>
+		<span id="MinutesD">mm</span><span > :</span>
+		<span id="SecondsD">ss</span>
+	</div>
+	<div class="centered">
+		<svg height="200" width="200">
+		  <circle cx="50%" cy="50%" r="90" stroke="black" stroke-width="3" fill="#F1F1F1"></circle>
+		  <line x1="50%" y1="50%" x2="30" y2="30" style="stroke:rgb(255,0,0);stroke-width:2" />
+		</svg>
+	</div>
+</body>
+</html>
