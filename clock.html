@@ -17,9 +17,14 @@
 		<span id="SecondsD">ss</span>
 	</div>
 	<div class="centered">
-		<svg height="200" width="200">
+		<svg height="180" width="180" style="
+    overflow: visible;
+">
 		  <circle cx="50%" cy="50%" r="90" stroke="black" stroke-width="3" fill="#F1F1F1"></circle>
-		  <line x1="50%" y1="50%" x2="30" y2="30" style="stroke:rgb(255,0,0);stroke-width:2" />
+		  <line id="SecondsA" x2="90" y2="10" x1="50%" y1="50%" style="stroke:rgb(255,0,0);stroke-width:2" ></line>
+		  <ellipse id="MinutesA" cx="90" cy="45" rx="3" ry="45" style="fill:transparent;stroke:purple;stroke-width:2" />
+		  <ellipse id="HoursA" cx="90" cy="68" rx="3" ry="22" style="fill:transparent;stroke:blue;stroke-width:2" />
+    </polygon>
 		</svg>
 	</div>
 </body>
