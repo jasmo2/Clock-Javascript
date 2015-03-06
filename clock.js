@@ -9,7 +9,7 @@
 		document.getElementById("SecondsD").innerHTML = prefixTime(clock.getSeconds());
 		r(document.getElementById("SecondsA"), 6* clock.getSeconds());
 		r(document.getElementById("MinutesA"), 6* clock.getMinutes());
-		r(document.getElementById("HoursA"), 15 * clock.getMinutes());
+		r(document.getElementById("HoursA"), 30 * clock.getHours());
 	}
 	function prefixTime (time) {
 		var prefix = "";
