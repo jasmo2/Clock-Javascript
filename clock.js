@@ -9,12 +9,9 @@ window.onload = function () {
 		document.getElementById("HourD").innerHTML = prefixTime(clock.getHours());
 		document.getElementById("MinutesD").innerHTML = prefixTime(clock.getMinutes());
 		document.getElementById("SecondsD").innerHTML = prefixTime(clock.getSeconds());
-		/*if (clock.getSeconds() === 59) {
-			console.log("---\n"+clock.getMinutes()+"---\n");
-			if (clock.getMinutes() === 59) {
-
-			};
-		};*/
+		r(document.getElementById("SecondsA"), 6* clock.getSeconds());
+		r(document.getElementById("MinutesA"), 6* clock.getMinutes());
+		r(document.getElementById("HoursA"), 15 * clock.getMinutes());
 	}
 	function prefixTime (time) {
 		var prefix = "";
@@ -25,4 +22,9 @@ window.onload = function () {
 		};
 		return prefix + time;
 	}
+	function r(el, deg) {
+		el.setAttribute('transform', 'rotate('+ deg +' 90 90)')
+		}
+		
+		
 };
