@@ -1,6 +1,4 @@
-window.onload = function () {
-	// body...
-	
+
 	setInterval(ticTac,1000);
 	function ticTac() {
 		var clock = new Date();
@@ -26,5 +24,3 @@ window.onload = function () {
 		el.setAttribute('transform', 'rotate('+ deg +' 90 90)')
 		}
 		
-		
-};
